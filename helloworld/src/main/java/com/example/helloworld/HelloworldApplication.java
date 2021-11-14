@@ -16,7 +16,7 @@ public class HelloworldApplication {
   class HelloworldController {
     @GetMapping("/")
     String hello() {
-      return "i simply do not understand what is going on";
+      return "git update test, if this doesn't work i will actually write an angry note to mr google";
     }
   }
 
