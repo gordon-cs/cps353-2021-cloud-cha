@@ -19,20 +19,17 @@ public class HelloworldApplication {
 
   @RestController
   class HelloworldController {
+    
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     String getFoosBySimplePathWithPathVariable(@PathVariable("id") String id) {
-        return id;
+        return "Hello" + id;
     }
-    // String hello() {
-    //   return "testing again";
-    // }
 
-    
-    // @GetMapping("/")
-    // String hello() {
-    //   return "testing again";
-    // }
+    @GetMapping("/")
+    String hello() {
+      return "testing again";
+    }
   }
 
   public static void main(String[] args) {
