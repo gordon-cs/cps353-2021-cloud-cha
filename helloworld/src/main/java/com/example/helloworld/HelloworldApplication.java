@@ -23,7 +23,7 @@ public class HelloworldApplication {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     String getFoosBySimplePathWithPathVariable(@PathVariable("id") String id) {
-        return "Hello " + id + "!";
+        return "Hello " + id + "!" + " REVISION 2";
     }
 
     @GetMapping("/")
